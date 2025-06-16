@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/allen.png">
+    <title>Inicio - MotoExpress</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #ffffff;
+        background-color: #464646;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #000;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #000;
+        margin-left: 20px;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .links a:hover {
+        color: #ff3c38;
+      }
+      .hero {
+        height: 100vh;
+        background: url("img/moto.jpg") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.068);
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px 30px;
+        border-radius: 12px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      /* Secciones */
+      section {
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      section p {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 30px;
+        border: 2px solid #000;
+        background: transparent;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      footer {
+        background-color: #272727;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #d3d3d3;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .links {
+          margin-top: 10px;
+        }
+
+        .links a {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">MotoExpress</div>
+      <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="preventivo.html">Preventivo</a>
+        <a href="correctivo.html">Correctivo</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>Tu moto siempre lista para rodar</h1>
+      <p>Mantenimiento profesional para que nunca te deje tirado</p>
+    </section>
+    <section>
+      <h2>¿Qué es MotoExpress?</h2>
+      <p>
+        Un espacio pensado para los amantes de las motocicletas. Aquí
+        encontrarás consejos, guías y soluciones para mantener tu moto en las
+        mejores condiciones, sin importar si es para la calle o la aventura.
+      </p>
+      <a href="preventivo.html" class="btn"
+        >Conoce el Mantenimiento Preventivo</a
+      >
+    </section>
+    <section>
+      <h2>¿Problemas con tu moto?</h2>
+      <p>
+        Revisa nuestra guía de mantenimiento correctivo, donde explicamos los
+        fallos más comunes y cómo solucionarlos sin gastar de más.
+      </p>
+      <a href="correctivo.html" class="btn">Ir al Correctivo</a>
+    </section>
+    <footer>
+      <p>© 2025 MotoExpress | Hecho con pasión por las dos ruedas</p>
+      <p>Contactanos <a href="contacto.html" class="btn">Ir al Contacto</a></p>
+    </footer>
+  </body>
+</html>
