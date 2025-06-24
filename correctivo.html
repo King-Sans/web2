@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mantenimiento Correctivo - MotoExpress</title>
+  <link rel="icon" type="image/png" href="img/allen.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #b1b1b1;
+      color: #111;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: #ff3c38;
+    }
+
+    .slide {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .slide:nth-child(even) {
+      background-color: #383838;
+      color: #eee;
+    }
+
+    .slide h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .slide h3 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slide p,
+    .slide ul,
+    .slide ol {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    .slide ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .slide ol {
+      padding-left: 20px;
+      list-style-type: decimal;
+    }
+
+    .slide img {
+      max-width: 90%;
+      width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      display: block;
+      margin: 20px auto 0;
+    }
+
+    .slide img:hover {
+      transform: scale(1.03);
+    }
+
+    .btn-transparente {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-transparente:hover {
+      background: white;
+      color: #000;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .slide h2 {
+        font-size: 1.8rem;
+      }
+
+      .slide p,
+      .slide ul,
+      .slide ol {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">MotoExpress</div>
+    <div class="links">
+      <a href="index.html">Inicio</a>
+      <a href="preventivo.html">Preventivo</a>
+      <a href="correctivo.html">Correctivo</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="slide"
+    style="background: url('img/mantenimiento-correctivo-bg.jpg') center/cover no-repeat; color: #111;">
+    <h2>Mantenimiento Correctivo</h2>
+    <p><strong>El mantenimiento correctivo</strong> es el conjunto de acciones técnicas que se realizan cuando la
+      motocicleta ya presenta fallas, daños o síntomas evidentes de mal funcionamiento. A diferencia del mantenimiento
+      preventivo (que busca evitar problemas), el correctivo actúa cuando el problema ya existe, con el fin de
+      diagnosticar, reparar o reemplazar los componentes afectados.</p>
+
+    <h3>¿Cuándo se aplica el mantenimiento correctivo?</h3>
+    <p>Se aplica cuando notas alguna de las siguientes señales:</p>
+    <ul>
+      <li>Fallas al encender el motor</li>
+      <li>Ruidos extraños en el motor, transmisión o frenos</li>
+      <li>Fugas de aceite, refrigerante o gasolina</li>
+      <li>Vibraciones inusuales</li>
+      <li>Frenos que no responden correctamente</li>
+      <li>Pérdida de potencia</li>
+      <li>Desgaste evidente en neumáticos, cadena, balatas o luces que no funcionan</li>
+    </ul>
+
+    <h3>Tipos de mantenimiento correctivo</h3>
+    <ol>
+      <li><strong>Correctivo Inmediato:</strong> Repara la falla en el momento en que ocurre, como una cadena que se
+        zafó o una ponchadura.</li>
+      <li><strong>Correctivo Programado:</strong> Se realiza cuando detectas fallas menores o desgaste que no afectan el
+        funcionamiento inmediato, pero necesitan atención para evitar daños mayores o paros inesperados.</li>
+    </ol>
+
+    <img src="img/mantenimient.jpg" alt="mantenimiento correctivo" />
+  </section>
+
+  <section class="slide" style="background-color: #383838; color: #eee;">
+    <h2>Importancia del mantenimiento correctivo</h2>
+    <ul style="max-width: 900px; margin: 0 auto 30px; text-align: left; list-style-type: disc; padding-left: 20px;">
+      <li>Evita accidentes o daños mayores</li>
+      <li>Reduce costos si se atiende a tiempo</li>
+      <li>Recupera el rendimiento óptimo de la motocicleta</li>
+      <li>Alarga la vida útil de los componentes</li>
+    </ul>
+
+    <h3 style="max-width: 900px; margin: 20px auto 15px; text-align: left;"><strong>Recomendaciones</strong></h3>
+    <ul style="max-width: 900px; margin: 0 auto 30px; text-align: left; list-style-type: disc; padding-left: 20px;">
+      <li>No ignores ruidos, fugas o cambios en el comportamiento de la moto.</li>
+      <li>Lleva un registro de las reparaciones que haces.</li>
+      <li>Si la falla se repite con frecuencia, considera una revisión más profunda del sistema completo.</li>
+      <li>Combina el mantenimiento correctivo con el preventivo, para evitar reparaciones costosas en el futuro.</li>
+    </ul>
+    <img src="img/marcas.jpg" alt="motillos" />
+  </section>
+
+  <section class="slide" style="background-color:#b1b1b1 ; color: #111;">
+    <h2>Mantenimiento por Cilindrada</h2>
+
+    <h3 style="text-align: left; max-width: 900px; margin: 20px auto 10px;">🔹 125cc – 150cc (uso urbano y básico)</h3>
+    <ul style="max-width: 900px; margin: 0 auto 20px; text-align: left; list-style-type: disc; padding-left: 20px;">
+      <li>Uso: Ciudad, distancias cortas, motos económicas.</li>
+      <li>Revisión cada 1,000 a 1,500 km.</li>
+      <li>Cambios de aceite más frecuentes.</li>
+      <li>Cuidado con sobrecalentamiento si se exige demasiado.</li>
+      <li>Revisar filtro de aire y bujía constantemente.</li>
+    </ul>
+
+    <h3 style="text-align: left; max-width: 900px; margin: 20px auto 10px;">🔹 200cc – 250cc (uso mixto)</h3>
+    <ul style="max-width: 900px; margin: 0 auto 20px; text-align: left; list-style-type: disc; padding-left: 20px;">
+      <li>Uso: Urbano y carretera, motos más versátiles.</li>
+      <li>Revisión cada 2,000 km aprox.</li>
+      <li>Mejor refrigeración (puede ser aire o líquida).</li>
+      <li>Lubricación más importante: usar aceite de mejor calidad.</li>
+      <li>Verificar sistema eléctrico y tensión de cadena con regularidad.</li>
+    </ul>
+
+    <h3 style="text-align: left; max-width: 900px; margin: 20px auto 10px;">🔹 300cc – 400cc (uso deportivo o de viaje)
+    </h3>
+    <ul style="max-width: 900px; margin: 0 auto; text-align: left; list-style-type: disc; padding-left: 20px;">
+      <li>Uso: Turismo, velocidad, carga moderada.</li>
+      <li>Revisión cada 2,500 a 3,000 km.</li>
+      <li>Sistema de frenos, suspensión y transmisión requieren inspección frecuente.</li>
+      <li>Lubricantes y combustibles deben ser de alto rendimiento.</li>
+      <li>Cuidado con los neumáticos por mayor potencia.</li>
+    </ul>
+    
+    <img src="img/cilindrada.jpeg" alt="Cilindrada" />
+  </section>
+<section class="slide" style="background-color: #383838; color: #eee;">
+  <h2>Consejos para Detectar y Reparar Fallas</h2>
+  <p>Reparar una motocicleta no siempre requiere ser un mecánico profesional, pero sí es clave saber detectar los síntomas antes de que se conviertan en fallas mayores. Aquí te damos una guía con los consejos más útiles para diagnosticar, prevenir y solucionar problemas comunes en tu moto.</p>
+
+  <h3>🚨 ¿Qué señales no debes ignorar?</h3>
+  <ul style="text-align: left; max-width: 800px; margin: 0 auto 20px;">
+    <li><strong>Ruidos extraños:</strong> Golpeteos metálicos, chillidos o zumbidos pueden indicar problemas en motor, transmisión o frenos. <em>Solución:</em> Revisa el nivel de aceite o el estado de rodamientos y frenos.</li>
+    <li><strong>Pérdida de potencia:</strong> Puede ser por bujía sucia, filtro de aire obstruido o fallo de carburación/inyección. <em>Solución:</em> Limpia el filtro, revisa la bujía y haz una afinación general.</li>
+    <li><strong>Arranque difícil o nulo:</strong> Causas comunes: batería baja, bujía defectuosa, combustible sucio o fallo de encendido. <em>Solución:</em> Carga o cambia la batería, revisa conexiones y encendido.</li>
+    <li><strong>Frenos que no responden:</strong> Puede ser aire en el sistema, líquido contaminado o balatas desgastadas. <em>Solución:</em> Purga el sistema, cambia balatas y revisa el líquido.</li>
+    <li><strong>Vibraciones anormales:</strong> Podría ser llanta desbalanceada, bujes dañados o tornillos flojos. <em>Solución:</em> Ajusta o reemplaza y equilibra las ruedas.</li>
+  </ul>
+
+  <h3>🧰 Tips prácticos para el día a día</h3>
+  <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+    <li>🔋 Revisa la batería una vez al mes. Mantén los bornes limpios y ajustados.</li>
+    <li>🦾 Verifica presión y estado de las llantas cada semana.</li>
+    <li>⚙️ Lubrica la cadena cada 500-800 km.</li>
+    <li>🔩 Asegúrate de que todos los tornillos visibles estén bien apretados (especialmente en dirección y ruedas).</li>
+    <li>🛠️ Lleva siempre un kit de herramientas básico, lámpara y fusibles de repuesto.</li>
+  </ul>
+
+  <img src="img/motos r.jpeg" alt="tips de reparación" />
+</section>
+
+  <footer>
+    <p>© 2025 MotoExpress | Hecho con pasión por las dos ruedas</p>
+    <p>Contactanos <a href="contacto.html" class="btn">Ir al Contacto</a></p>
+  </footer>
+</body>
+
+
+</html>
