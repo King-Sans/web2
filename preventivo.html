@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mantenimiento Preventivo - MotoExpress</title>
+  <link rel="icon" type="image/png" href="img/allen.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #b1b1b1;
+      color: #111;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: #ff3c38;
+    }
+
+    .slide {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .slide:nth-child(even) {
+      background-color: #383838;
+      color: #eee;
+    }
+
+    .slide h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .slide p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .slide img {
+      max-width: 90%;
+      width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .slide img:hover {
+      transform: scale(1.03);
+    }
+
+    .btn-transparente {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-transparente:hover {
+      background: white;
+      color: #000;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .slide h2 {
+        font-size: 1.8rem;
+      }
+
+      .slide p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">MotoExpress</div>
+    <div class="links">
+      <a href="inicio.html">Inicio</a>
+      <a href="preventivo.html">Preventivo</a>
+      <a href="correctivo.html">Correctivo</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <section style="
+        padding: 80px 20px;
+        background: url('img/preventivo.jpg') center/cover no-repeat;
+        filter: brightness(85%);
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 3px #000;
+      ">
+    <h2 style="font-size: 2.4rem; margin-bottom: 20px">
+      Mantenimiento Preventivo
+    </h2>
+    <p style="max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem">
+      El mantenimiento preventivo es la clave para mantener tu moto siempre
+      lista, evitar fallas costosas y rodar con seguridad. Aprende a cambiar
+      el aceite, revisar frenos, tensar la cadena y mucho más con nuestra guía
+      visual paso a paso.
+    </p>
+
+    <div style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+          margin-top: 30px;
+        ">
+      <a href="preventivo.html#aceite" class="btn-transparente">Cambio de Aceite</a>
+      <a href="preventivo.html#filtro-aire" class="btn-transparente">Filtro de Aire</a>
+      <a href="preventivo.html#filtro-gasolina" class="btn-transparente">Filtro de Gasolina</a>
+      <a href="preventivo.html#liquido-frenos" class="btn-transparente">Líquido de Frenos</a>
+      <a href="preventivo.html#balatas" class="btn-transparente">Cambio de Balatas</a>
+      <a href="preventivo.html#tension-cadena" class="btn-transparente">Tensión de Cadena</a>
+      <a href="preventivo.html#lubricacion" class="btn-transparente">Lubricación</a>
+    </div>
+  </section>
+
+  <section class="slide" id="aceite">
+    <h2>Cambio de Aceite</h2>
+    <p>
+      - Enciende el motor 1 minuto.<br />
+      - Quita el tornillo de drenado y vacía el aceite viejo.<br />
+      - Cambia el filtro de aceite si aplica.<br />
+      - Coloca el tornillo y rellena con aceite nuevo (usa el recomendado por
+      el fabricante).
+    </p>
+    <img src="img/Cambia-Aceite.jpg" alt="Cambio de aceite" />
+  </section>
+
+  <section class="slide" id="filtro-aire">
+    <h2>Cambio de Filtro de Aire</h2>
+    <p>
+      - Localiza la caja del filtro (generalmente bajo el asiento o
+      tanque).<br />
+      - Abre la tapa y retira el filtro.<br />
+      - Sustituye con uno nuevo o limpia si es reusable.<br />
+      - Asegúrate de cerrar bien la tapa.
+    </p>
+    <img src="img/filtro-aire.jpg" alt="Cambio de filtro de aire" />
+  </section>
+
+  <section class="slide" id="filtro-gasolina">
+    <h2>Cambio de Filtro de Gasolina</h2>
+    <p>
+      - Ubica el filtro entre el tanque y el carburador/inyección.<br />
+      - Usa pinzas para cerrar las mangueras.<br />
+      - Desconecta el filtro viejo y reemplázalo.<br />
+      - Revisa posibles fugas al encender.
+    </p>
+    <img src="img/filtro-gasolina.jpg" alt="Cambio de filtro de gasolina" />
+  </section>
+
+  <section class="slide" id="liquido-frenos">
+    <h2>Revisión y Cambio de Líquido de Frenos</h2>
+    <p>
+      - Localiza el depósito (manillar o rueda trasera).<br />
+      - Usa jeringa para retirar líquido viejo.<br />
+      - Rellena con líquido DOT recomendado.<br />
+      - Purga el sistema si cambias completamente.
+    </p>
+    <img src="img/liquido_frenos.jpg" alt="Cambio de líquido de frenos" />
+  </section>
+
+  <section class="slide" id="balatas">
+    <h2>Cambio de Balatas</h2>
+    <p>
+      - Retira la pinza de freno con herramienta adecuada.<br />
+      - Extrae las balatas gastadas.<br />
+      - Coloca las nuevas asegurándote de alinear bien.<br />
+      - Ajusta y verifica que el disco esté libre.
+    </p>
+    <img src="img/cambio-balatas.jpg" alt="Cambio de balatas" />
+  </section>
+
+  <section class="slide" id="tension-cadena">
+    <h2>Tensión de Cadena</h2>
+    <p>
+      - Coloca la moto en el caballete central o soporte.<br />
+      - Afloja los ejes traseros.<br />
+      - Ajusta con los tornillos laterales la holgura recomendada (2-3 cm).<br />
+      - Centra la rueda y vuelve a apretar.
+    </p>
+    <img src="img/Tension-cadena.jpg" alt="Tensión de cadena" />
+  </section>
+
+  <section class="slide" id="lubricacion">
+    <h2>Lubricación de Cadena</h2>
+    <p>
+      - Limpia la cadena con desengrasante si está sucia.<br />
+      - Aplica lubricante en eslabones internos mientras giras la rueda.<br />
+      - Limpia exceso con trapo para evitar manchas.<br />
+      - Hazlo cada 500-800 km o tras lluvia.
+    </p>
+    <img src="img/lubricacion.jpeg" alt="Lubricación de cadena" />
+  </section>
+
+  <section style="
+        background-color: #383838;
+        color: white;
+        padding: 50px 400px;
+        text-align: left;
+        font-family: Arial;
+      ">
+    <h2 style="font-size: 22px; color: #333; margin-bottom: 15px">
+      Video Tutorial
+    </h2>
+    <p style="font-size: 16px; margin-bottom: 10px">
+      Aquí te dejo un video que explica cómo hacerle mantenimiento a tu moto
+    </p>
+    <div style="width: 100%; max-width: 560px; margin-bottom: 10px;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/tQfE9y_8C3Q" title="Video YouTube"
+        frameborder="1" allowfullscreen></iframe>
+    </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 MotoExpress | Hecho con pasión por las dos ruedas</p>
+    <p>Contactanos <a href="contacto.html" class="btn">Ir al Contacto</a></p>
+  </footer>
+</body>
+
+</html>
